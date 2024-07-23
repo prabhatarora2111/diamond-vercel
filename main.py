@@ -8,7 +8,7 @@ import csv
 app = Flask(__name__)
 data = pd.read_csv('gemstone.csv')
 
-with open('RandomModelDiamond.pkl', 'rb') as file:
+with open('LassoModelDiamond.pkl', 'rb') as file:
     pipe = pickle.load(file)
 
 @app.route("/")
